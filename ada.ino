@@ -16,7 +16,6 @@ delay(100);
 }
 
 void loop() {
-  delay(100);
   
   leituraEsquerda = analogRead(sensorEsquerda);
   leituraDireita = analogRead(sensorDireita);
@@ -26,6 +25,15 @@ void loop() {
   Serial.print("  Sensor direita: ");
   Serial.println(leituraDireita);
 
-  digitalWrite(motorEsquerda, HIGH);
-  digitalWrite(motorDireita, HIGH);
+//  digitalWrite(motorEsquerda, HIGH);
+//  digitalWrite(motorDireita, HIGH);
+
+   if(leituraEsquerda > 200 || leituraDireita > 200){
+      digitalWrite(motorEsquerda, HIGH);
+      digitalWrite(motorDireita, HIGH);
+   }
+   else{
+      digitalWrite(motorEsquerda, LOW);
+      digitalWrite(motorDireita, LOW);
+   }
 }
