@@ -29,11 +29,15 @@ void loop() {
 //  digitalWrite(motorDireita, HIGH);
 
    if(leituraEsquerda > 200 || leituraDireita > 200){
-      digitalWrite(motorEsquerda, HIGH);
-      digitalWrite(motorDireita, HIGH);
+   //   digitalWrite(motorEsquerda, HIGH);
+   //   digitalWrite(motorDireita, HIGH);
+        analogWrite(motorEsquerda, 255);
+        analogWrite(motorDireita, 255);
    }
    else{
-      digitalWrite(motorEsquerda, LOW);
-      digitalWrite(motorDireita, LOW);
+   //   digitalWrite(motorEsquerda, LOW);
+   //   digitalWrite(motorDireita, LOW);
+        analogWrite(motorEsquerda, 0);
+        analogWrite(motorDireita, 0);
    }
 }
