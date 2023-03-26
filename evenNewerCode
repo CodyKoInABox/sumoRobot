@@ -52,15 +52,11 @@ void loop() {
   Serial.print(leituraFrente);
   Serial.println("cm.");
 
- //   if(leituraEsquerda > 200 || leituraDireita > 200){
- //       analogWrite(motorEsquerda, 200);
- //       analogWrite(motorDireita, 200);
- //  }
- //  else{
- //       analogWrite(motorEsquerda, 0);
- //       analogWrite(motorDireita, 0);
- //  }
   
+  if(leituraEsquerda < 200 || leituraDireita < 200){
+       analogWrite(motorEsquerda, 0);
+       analogWrite(motorDireita, 0);
+  }
   
   //procurar adversario
   if(leituraFrente == 336){
