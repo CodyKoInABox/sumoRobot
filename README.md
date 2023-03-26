@@ -1,6 +1,7 @@
 # sumo-robot-PAC
 nao estou conseguindo acessar meu github no momento entao fiz esse temporario para hospedar esse exercicio
-![image](https://user-images.githubusercontent.com/125526050/227751724-e9c374b6-cffe-405d-96c2-b35140065208.png)
+![image](https://user-images.githubusercontent.com/125526050/227752442-9e2bac50-faa9-4ef2-8694-bde24a389990.png)
+
 **Fio Preto ->**  Ground
 
 **Fio Vermelho ->** 5V
