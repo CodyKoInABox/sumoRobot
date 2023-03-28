@@ -1,10 +1,10 @@
 const byte sensorEsquerda = A3;
 const byte sensorDireita = A4;
-const byte sensorFrente = 7;
+const byte sensorFrente = 7; //D7 no arduino nano
 
 
-const byte motorEsquerda = 4;
-const byte motorDireita = 2;
+const byte motorEsquerda = 4; //D4 no arduino nano
+const byte motorDireita = 2; //D2 no arduino nano
 
 int leituraEsquerda = 0;
 int leituraDireita = 0;
