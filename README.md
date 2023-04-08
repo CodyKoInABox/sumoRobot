@@ -1,15 +1,5 @@
 # PAC | Sumo Robot
-### CODIGO MAIS RECENTE -> [evenNewerCode.ino](https://github.com/CodyKoInABox/sumo-robot-PAC/blob/main/evenNewerCode)
 
-https://www.tinkercad.com/things/4REOPjkviOQ
+## [Codigos da aula (arduino)](https://github.com/CodyKoInABox/sumo-robot-PAC/tree/main/arduino)
 
-![image](https://user-images.githubusercontent.com/125526050/227752442-9e2bac50-faa9-4ef2-8694-bde24a389990.png)
-
-**Fio Preto ->**  Ground
-
-**Fio Vermelho ->** 5V
-
-**Fio Laranja ->** Output
-
-**Fio Amarelo ->** Input
-
+## [Codigos do Tinkercad](https://github.com/CodyKoInABox/sumo-robot-PAC/tree/main/tinkercad)
