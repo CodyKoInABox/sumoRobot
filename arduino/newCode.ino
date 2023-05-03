@@ -11,10 +11,10 @@
 #define SensorDireito A1
 #define SensorEsquerdo A0
 
-// LUZ = THREASHHOLD DA LINHA BRANCA NAO SEI ESCREVER THREADSHOLD
+// LUZ = THRESHOLD DA LINHA BRANCA
 #define LUZ 500
 
-// DISTANCIA = THREASHHOLD DA DISTANCIA PRO SENSOR FRONTAL NAO SEI ESCREVER THREADSHOLD
+// DISTANCIA = THRESHOLD DA DISTANCIA PRO SENSOR FRONTAL
 #define DISTANCIA 120
 
 void setup(){
@@ -26,6 +26,7 @@ void setup(){
 void loop(){
 
 Serial.println(temAlgoNaFrente(readSensor(SensorFrente), DISTANCIA));
+girarEnquantoNaoTemNadaNaFrente(temAlgoNaFrente(readSensor(SensorFrente), DISTANCIA), MotorDireitoFrente, MotorEsquerdoTras);
 
   
 }
@@ -71,5 +72,17 @@ void girarOff(int motorFrente, int motorTras){
   motorOff(motorTras);
 }
 
+void girarEnquantoNaoTemNadaNaFrente(bool temAlgoNaFrente, int motorFrente, int motorTras){
+  if(temAlgoNaFrente == 1){
+    girarOff(motorFrente, motorTras);
+    motorOn(MotorDireitoFrente);
+    motorOn(MotorEsquerdoFrente);
+  }
+  else{
+    motorOff(MotorDireitoFrente);
+    motorOff(MotorEsquerdoFrente);
+    girarOn(motorFrente, motorTras);
+  }
+}
 
 
