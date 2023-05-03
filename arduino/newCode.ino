@@ -4,7 +4,9 @@
 #define MotorDireitoIN3 10
 #define MotorDireitoIN4 9
 
-
+#define SensorFrente A2
+#define SensorDireito A1
+#define SensorEsquerdo A0
 
 void setup(){
   Serial.begin(9600);
@@ -17,27 +19,15 @@ void setup(){
 }
 
 void loop(){
-  motorSetup(7, 11);
-  
-  motorOn(MotorEsquerdoIN1);
-  delay(2000);
-  motorOff(MotorEsquerdoIN1);
 
-  motorOn(MotorEsquerdoIN2);
-  delay(2000);
-  motorOff(MotorEsquerdoIN2);
-
-  motorOn(MotorDireitoIN3);
-  delay(2000);
-  motorOff(MotorDireitoIN3);
-
-  motorOn(MotorDireitoIN4);
-  delay(2000);
-  motorOff(MotorDireitoIN4);
+Serial.print(readSensor(SensorDireito));
+Serial.print("     ");
+Serial.println(readSensor(SensorEsquerdo));
   
 }
 
 int readSensor(int sensorPIN){
+ 
   return analogRead(sensorPIN);
 }
 
