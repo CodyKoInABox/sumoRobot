@@ -1,21 +1,22 @@
-#define MotorEsquerdoIN1 5
-#define MotorEsquerdoIN2 6
+#define MotorEsquerdoTras 5
+#define MotorEsquerdoFrente 6
 
-#define MotorDireitoIN3 10
-#define MotorDireitoIN4 9
+#define MotorDireitoFrente 10
+#define MotorDireitoTras 9
+
+#define MotorDireitoDefine 11
+#define MotorEsquerdoDefine 7
 
 #define SensorFrente A2
 #define SensorDireito A1
 #define SensorEsquerdo A0
 
+#define LUZ 400 
+
 void setup(){
   Serial.begin(9600);
-  pinMode(MotorEsquerdoIN1, OUTPUT);
-  pinMode(MotorEsquerdoIN2, OUTPUT);
-
-  pinMode(MotorDireitoIN3, OUTPUT);
-  pinMode(MotorDireitoIN4, OUTPUT);
-
+  motorSetup(MotorDireitoDefine, MotorEsquerdoDefine);
+ 
 }
 
 void loop(){
@@ -43,3 +44,14 @@ void motorOn(int motorPIN){
 void motorOff(int motorPIN){
    digitalWrite(motorPIN, LOW);
 }
+
+
+
+void whiteLine(void){
+
+
+
+}
+
+
+
