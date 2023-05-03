@@ -28,8 +28,9 @@ Serial.println(estaNaLinhaBranca(readSensor(SensorEsquerdo), LUZ));
   
 }
 
+// inicio das funcoes basicas !!NAO MEXER!!
+
 int readSensor(int sensorPIN){
- 
   return analogRead(sensorPIN);
 }
 
@@ -46,12 +47,12 @@ void motorOff(int motorPIN){
    digitalWrite(motorPIN, LOW);
 }
 
-
-
 bool estaNaLinhaBranca(int sensor, int luz){
-
-return sensor <= luz;
+  return sensor <= luz;
 }
+
+
+// fim das funcoes basicas !!NAO MEXER!!
 
 
 
