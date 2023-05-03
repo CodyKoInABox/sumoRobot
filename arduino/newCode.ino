@@ -11,7 +11,7 @@
 #define SensorDireito A1
 #define SensorEsquerdo A0
 
-#define LUZ 400 
+#define LUZ 500 
 
 void setup(){
   Serial.begin(9600);
@@ -21,9 +21,10 @@ void setup(){
 
 void loop(){
 
-Serial.print(readSensor(SensorDireito));
+Serial.print(estaNaLinhaBranca(readSensor(SensorDireito), LUZ));
 Serial.print("     ");
-Serial.println(readSensor(SensorEsquerdo));
+Serial.println(estaNaLinhaBranca(readSensor(SensorEsquerdo), LUZ));
+
   
 }
 
@@ -47,10 +48,9 @@ void motorOff(int motorPIN){
 
 
 
-void whiteLine(void){
+bool estaNaLinhaBranca(int sensor, int luz){
 
-
-
+return sensor <= luz;
 }
 
 
