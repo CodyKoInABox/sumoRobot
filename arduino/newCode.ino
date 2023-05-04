@@ -11,7 +11,7 @@
 #define SensorDireito A1
 #define SensorEsquerdo A0
 
-// LUZ = THRESHOLD DA LINHA BRANCA
+// LUZ = THRESHOLD DA LINHA BRANCA oi teste pull request
 #define LUZ 500
 
 // DISTANCIA = THRESHOLD DA DISTANCIA PRO SENSOR FRONTAL
