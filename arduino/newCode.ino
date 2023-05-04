@@ -25,9 +25,7 @@ void setup(){
 
 void loop(){
 
-Serial.println(temAlgoNaFrente(readSensor(SensorFrente), DISTANCIA));
-girarEnquantoNaoTemNadaNaFrente(temAlgoNaFrente(readSensor(SensorFrente), DISTANCIA), MotorDireitoFrente, MotorEsquerdoTras);
-
+  Serial.println(readSensor(SensorFrente));
   
 }
 
@@ -84,5 +82,4 @@ void girarEnquantoNaoTemNadaNaFrente(bool temAlgoNaFrente, int motorFrente, int 
     girarOn(motorFrente, motorTras);
   }
 }
-
 
