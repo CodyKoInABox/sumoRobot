@@ -5,3 +5,6 @@
 
 ### Codigo procura robo -> [code.ino](https://github.com/CodyKoInABox/sumo-robot-PAC/blob/main/arduino/code.ino)
 <sub>(fica girando ate achar outro robo (ou o pe de alguem, provavelmente), a partir disso, se move em linha reta em direcao ao robo)</sub>
+
+### Codigo final (em desenvolvimento) -> [newCode.ino](https://github.com/CodyKoInABox/sumo-robot-PAC/blob/main/arduino/newCode.ino)
+<sub>(usa um sistema de funcoes basicas que funcionam como peças de lego, quase tudo que é possivel se fazer com o robo pode ser feito atraves desses blocos de construcao, basta chamar as funcoes na ordem certa e com as condicionais certas)</sub>
