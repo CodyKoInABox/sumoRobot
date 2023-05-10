@@ -102,13 +102,21 @@ void mainFunction(){
       }
     else{
         girarOff(MotorDireitoFrente, MotorEsquerdoTras);
+         
+        girarOn(MotorDireitoTras, MotorEsquerdoFrente);
+
+        delay(150);
+
+        girarOff(MotorDireitoTras, MotorEsquerdoFrente);
+
+        
         motorOn(MotorDireitoFrente);
         motorOn(MotorEsquerdoFrente);
       }
 
      
     }else{
-      //ELSE = ESTA NA LINHA BRNACA
+      //ELSE = ESTA NA LINHA BRANCA
 
       
         motorOff(MotorDireitoFrente);
