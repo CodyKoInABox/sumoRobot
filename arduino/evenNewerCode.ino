@@ -88,6 +88,8 @@ void girarEnquantoNaoTemNadaNaFrente(bool temAlgoNaFrente, int motorFrente, int 
 // girar ate encontrar outro robo e entao ir reto
 // caso encontre linha branca, dar a re e voltar a girar
 
+bool firstTime = true;
+
 void mainFunction(){
 
     if(!estaNaLinhaBranca(readSensor(SensorEsquerdo), LUZ) || !estaNaLinhaBranca(readSensor(SensorDireito), LUZ)){
@@ -98,23 +100,31 @@ void mainFunction(){
           if(!temAlgoNaFrente( readSensor(SensorFrente), DISTANCIA  )){
         motorOff(MotorDireitoFrente);
         motorOff(MotorEsquerdoFrente);
-        girarOn(MotorDireitoFrente, MotorEsquerdoTras);
+        
+        //girarOn(MotorDireitoFrente, MotorEsquerdoTras);
+         analogWrite(MotorDireitoFrente, 130);
+         analogWrite(MotorEsquerdoTras, 130);
+
+         firstTime = true;
+        
       }
     else{
-        girarOff(MotorDireitoFrente, MotorEsquerdoTras);
-         
-        girarOn(MotorDireitoTras, MotorEsquerdoFrente);
-
-        delay(150);
-
-        girarOff(MotorDireitoTras, MotorEsquerdoFrente);
 
 
-        while(temAlgoNaFrente( readSensor(SensorFrente), DISTANCIA  )){
+        if(firstTime){
+          girarOff(MotorDireitoFrente, MotorEsquerdoTras);
+
+          girarOn(MotorDireitoTras, MotorEsquerdoFrente);
+          delay(60);
+          girarOff(MotorDireitoTras, MotorEsquerdoFrente);
+        }
+       
+        firstTime = false;
+      
               motorOn(MotorDireitoFrente);
               motorOn(MotorEsquerdoFrente);
-              delay(1);
-          }
+              
+         
 
       }
 
