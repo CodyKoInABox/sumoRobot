@@ -109,9 +109,13 @@ void mainFunction(){
 
         girarOff(MotorDireitoTras, MotorEsquerdoFrente);
 
-        
-        motorOn(MotorDireitoFrente);
-        motorOn(MotorEsquerdoFrente);
+
+        while(temAlgoNaFrente( readSensor(SensorFrente), DISTANCIA  )){
+              motorOn(MotorDireitoFrente);
+              motorOn(MotorEsquerdoFrente);
+              delay(1);
+          }
+
       }
 
      
