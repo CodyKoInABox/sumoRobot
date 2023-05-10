@@ -110,29 +110,14 @@ void mainFunction(){
     }else{
       //ELSE = ESTA NA LINHA BRNACA
 
-       if(!temAlgoNaFrente( readSensor(SensorFrente), DISTANCIA  )){
-           motorOff(MotorDireitoFrente);
-          motorOff(MotorEsquerdoFrente);
-          girarOff(MotorDireitoFrente, MotorEsquerdoTras);
+      
+        motorOff(MotorDireitoFrente);
+        motorOff(MotorEsquerdoFrente);
+        girarOff(MotorDireitoFrente, MotorEsquerdoTras);
 
-          motorOn(MotorDireitoTras);
-          motorOn(MotorEsquerdoTras);
-          delay(420);
-       }
-       else{
-                   motorOff(MotorDireitoFrente);
-            motorOff(MotorEsquerdoFrente);
-            girarOff(MotorDireitoFrente, MotorEsquerdoTras);
-
-            motorOn(MotorDireitoTras);
-            motorOn(MotorEsquerdoTras);
-            delay(420);
-
-            motorOff(MotorDireitoTras);
-            motorOff(MotorEsquerdoTras);
-            
-            exit(0);
-       }
+        motorOn(MotorDireitoTras);
+        motorOn(MotorEsquerdoTras);
+        delay(420);
     
     }
   
