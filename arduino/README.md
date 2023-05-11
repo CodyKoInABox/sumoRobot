@@ -1,6 +1,8 @@
 # CODIGO DO ARDUINO (ARDUINO REAL)
 
-### Codigo final (em desenvolvimento) -> [newCode.ino](https://github.com/CodyKoInABox/sumo-robot-PAC/blob/main/arduino/newCode.ino)
+#### SECRETS do evenNewerCode.ino -> https://www.invertexto.com/sumorobotsecret
+
+### Codigo final (em desenvolvimento) -> [evenNewerCode.ino](https://github.com/CodyKoInABox/sumo-robot-PAC/blob/main/arduino/evenNewerCode.ino)
 <sub>(usa um sistema de funcoes basicas que funcionam como peças de lego, quase tudo que é possivel se fazer com o robo pode ser feito atraves desses blocos de construcao, basta chamar as funcoes na ordem certa e com as condicionais certas)</sub>
 
 ### Codigo linha branca -> [linhaBranca.ino](https://github.com/CodyKoInABox/sumo-robot-PAC/blob/main/arduino/linhaBranca.ino)
