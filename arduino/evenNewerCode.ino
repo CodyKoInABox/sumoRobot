@@ -1,3 +1,6 @@
+// OS VALORES SECRET SERAO PRIVADOS ATE O DIA DA BATALHA (17/05), APOS A BATALHA, OS VALORES SERAO PUBLICOS
+// OS VALORES SECRET PODEM SER ENCONTRADOS AQUI -> https://www.invertexto.com/sumorobotsecret (protegidos por senha)
+
 #define MotorEsquerdoTras 5
 #define MotorEsquerdoFrente 6
 
@@ -12,10 +15,10 @@
 #define SensorEsquerdo A0
 
 // LUZ = THRESHOLD DA LINHA BRANCA (menor que isso = esta na branca)
-#define LUZ 500
+#define LUZ SECRET_5
 
 // DISTANCIA = THRESHOLD DA DISTANCIA PRO SENSOR FRONTAL
-#define DISTANCIA 120
+#define DISTANCIA SECRET_4
 
 void setup(){
   Serial.begin(9600);
@@ -102,8 +105,8 @@ void mainFunction(){
         motorOff(MotorEsquerdoFrente);
         
         //girarOn(MotorDireitoFrente, MotorEsquerdoTras);
-         analogWrite(MotorDireitoFrente, 130);
-         analogWrite(MotorEsquerdoTras, 130);
+         analogWrite(MotorDireitoFrente, SECRET_1);
+         analogWrite(MotorEsquerdoTras, SECRET_1);
 
          firstTime = true;
         
@@ -115,7 +118,7 @@ void mainFunction(){
           girarOff(MotorDireitoFrente, MotorEsquerdoTras);
 
           girarOn(MotorDireitoTras, MotorEsquerdoFrente);
-          delay(60);
+          delay(SECRET_2);
           girarOff(MotorDireitoTras, MotorEsquerdoFrente);
         }
        
@@ -139,7 +142,7 @@ void mainFunction(){
 
         motorOn(MotorDireitoTras);
         motorOn(MotorEsquerdoTras);
-        delay(420);
+        delay(SECRET_3);
     
     }
   
