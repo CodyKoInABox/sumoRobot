@@ -1,6 +1,12 @@
 // OS VALORES SECRET SERAO PRIVADOS ATE O DIA DA BATALHA (17/05), APOS A BATALHA, OS VALORES SERAO PUBLICOS
 // OS VALORES SECRET PODEM SER ENCONTRADOS AQUI -> https://www.invertexto.com/sumorobotsecret (protegidos por senha)
 
+#define SECRET_1 212
+#define SECRET_2 500
+#define SECRET_3 2500
+#define SECRET_4 40
+#define SECRET_5 980
+
 #define MotorEsquerdoTras 5
 #define MotorEsquerdoFrente 6
 
