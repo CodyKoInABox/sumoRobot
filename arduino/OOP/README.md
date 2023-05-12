@@ -7,7 +7,7 @@
 
 ### SuperMotor
 
-| Metodo                           | Descricao                                                                                                 | Tipo |
+| Metodo                           | Descricao                                                                                                 | Acesso |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------|------|
 | frente()                         | Faz com que o motor se mova para frente com velocidade maxima                                             |Publico|
 | tras()                           | Faz com que o motor se mova para tras com velocidade maxima                                               |Publico|
@@ -27,7 +27,7 @@
 
 ### Sensor
 
-| Metodo                           | Descricao                                                                                                 | Tipo |
+| Metodo                           | Descricao                                                                                                 | Acesso |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------|------|
 | leitura()                        | Retorna o valor da leitura do sensor                                                                      |Publico|
 | setPin(int)                      | Define a porta analogica que leva ate a saida da leitura do sensor                                        |Publico|
@@ -40,7 +40,7 @@
 
 ### SuperMotor
 
-| Atributo                           | Descricao                                                                                               | Tipo |
+| Atributo                           | Descricao                                                                                               | Acesso |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------|------|
 | pinFrente                         | Porta digital PWM que conecta a entrada do motor que faz com que ele va para frente                      |Privado|
 | pinTras                           | Porta digital PWM que conecta a entrada do motor que faz com que ele va para tras                        |Privado|
@@ -48,6 +48,6 @@
 
 ### Sensor
 
-| Atributo                           | Descricao                                                                                               | Tipo |
+| Atributo                           | Descricao                                                                                               | Acesso |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------|------|
 | pin                              | Porta analogica que conecta na saida de informacao do sensor                      |Privado|
