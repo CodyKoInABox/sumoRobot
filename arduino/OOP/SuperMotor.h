@@ -1,9 +1,9 @@
-#ifndef Motor_h
-#define Motor_h
+#ifndef SuperMotor_h
+#define SuperMotor_h
 
 #include <Arduino.h>
 
-class Motor{
+class SuperMotor{
    private:
 
    int pinFrente;
@@ -15,6 +15,10 @@ class Motor{
     void frente();
 
     void tras();
+
+    void velocidadeFrente(int velocidade);
+
+    void velocidadeTras(int velocidade);
 
     void parar();
 
@@ -34,7 +38,7 @@ class Motor{
 
     int getEnablePin();
 
-    Motor(int setPinFrente, int setPinTras, int setEnablePin);
+    SuperMotor(int setPinFrente, int setPinTras, int setEnablePin);
 }
 
 #endif
