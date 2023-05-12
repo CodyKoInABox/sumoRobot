@@ -1,7 +1,7 @@
 # CODIGO DO ARDUINO (ARDUINO REAL)
 
 #### SECRETS do evenNewerCode.ino -> https://www.invertexto.com/sumorobotsecret
-<sub> Ate o dia da batalha (17/05) os valores SECRET ficarao protegidos por senha, apos a batalha os valores serao publicos.</sub>
+<sub> Ate o dia da batalha (17/05) os valores SECRET ficarao protegidos por senha para fins competitivos, apos a batalha, os valores serao publicos.</sub>
 
 ### Codigo final -> [evenNewerCode.ino](https://github.com/CodyKoInABox/sumo-robot-PAC/blob/main/arduino/evenNewerCode.ino)
 <sub>usa um sistema de funcoes basicas que funcionam como peças de lego, quase tudo que é possivel se fazer com o robo pode ser feito atraves desses blocos de construcao, basta chamar as funcoes na ordem certa e com as condicionais certas. tambem possui uma funcao MAIN, chamada mainFunction, ela faz o robo funcionar do jeito ideal para a batalha (girar ate encontrar um adversario, e entao seguir em sua direcao com velocidade maxima)</sub>
