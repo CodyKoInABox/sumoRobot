@@ -3,8 +3,14 @@
 #### SECRETS do evenNewerCode.ino -> https://www.invertexto.com/sumorobotsecret
 <sub> Ate o dia da batalha (17/05) os valores SECRET ficarao protegidos por senha, apos a batalha os valores serao publicos.</sub>
 
-### Codigo final (em desenvolvimento) -> [evenNewerCode.ino](https://github.com/CodyKoInABox/sumo-robot-PAC/blob/main/arduino/evenNewerCode.ino)
+### Codigo final -> [evenNewerCode.ino](https://github.com/CodyKoInABox/sumo-robot-PAC/blob/main/arduino/evenNewerCode.ino)
 <sub>(usa um sistema de funcoes basicas que funcionam como peças de lego, quase tudo que é possivel se fazer com o robo pode ser feito atraves desses blocos de construcao, basta chamar as funcoes na ordem certa e com as condicionais certas)</sub>
+
+### Codigo performance -> [performance.ino](https://github.com/CodyKoInABox/sumoRobot/blob/main/arduino/performance.ino)
+<sub> versao performance do codigo, feito pensando em velocidade maxima de execucao, boilerplate reduzido e leitura dificil</sub>
+
+### Codigo Orientado a Objetos -> [OOP](https://github.com/CodyKoInABox/sumoRobot/tree/main/arduino/OOP)
+<sub> versao orientada a objetos do codigo, como solicitado pelo professor</sub>
 
 ### Codigo linha branca -> [linhaBranca.ino](https://github.com/CodyKoInABox/sumo-robot-PAC/blob/main/arduino/linhaBranca.ino)
 <sub>(anda reto no preto e para no branco)</sub>
