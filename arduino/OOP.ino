@@ -31,7 +31,7 @@ class Sensor{
 
     int pin;
 
-    void leitura(){
+    int leitura(){
         return analogRead(this->pin);
     }
 }

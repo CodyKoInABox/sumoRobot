@@ -20,3 +20,19 @@ void Motor :: enable(){
 void Motor :: disable(){
     digitalWrite(setEnable, LOW);
 }
+
+void Motor :: setPin(int value){
+    pin = value;
+}
+
+int Motor :: getPin(){
+    return pin;
+}
+
+void Motor :: setEnablePin(int value){
+    enablePin = value;
+}
+
+int Motor :: getEnablePin(){
+    return enablePin;
+}

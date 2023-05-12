@@ -1,16 +1,26 @@
 class Motor{
-   public:
+   private:
 
    int pin;
    int enablePin;
 
-   void on(){}
+   public:
 
-   void off(){}
+   void on();
 
-   void enable(){}
+   void off();
 
-   void disable(){}
+   void enable();
 
-   Motor(int setPin, int setDefine){}
+   void disable();
+
+   void setPin(int value);
+
+   int getPin();
+
+   void setEnablePin(int value);
+
+   int getEnablePin();
+
+   Motor(int setPin, int setDefine);
 }
