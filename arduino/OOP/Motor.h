@@ -1,6 +1,8 @@
 #ifndef Motor_h
 #define Motor_h
 
+#include <Arduino.h>
+
 class Motor{
    private:
 
