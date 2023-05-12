@@ -22,6 +22,7 @@
 | getPinTras()                     | Retorna o numero da porta digital que leva para a entrada do motor que controla sue movimento para tras   |
 | setEnablePin(int)                | Define qual porta digital leva para a entrada do motor que o habilita                                     |
 | getEnablePin()                   | Retorna o numero da porta digital que leva para a entrada do motor que o habilita                         |
+| constructor(int, int, int)            | Construtor da classe, aceita como parametros os valores do setPinFrente(int), setPinTras(int) e setEnablePin(int)  |
 
 
 ### Sensor
@@ -33,3 +34,4 @@
 | getPin()                         | Retorna o numero da porta analogica que leva ate a saida da leitura do sensor                             |
 | maiorQue(int)                    | Retorna true caso a leitura() seja maior que um numero definido pelo usuario e false caso seja menor      |
 | menorQue(int)                    | Retorna true caso a leitura() seja menor que um numero definido pelo usuario e false caso seja maior      |
+| constructor(int)                 | Construtor da classe, aceita como parametros o valor do setPin(int)                                          |
