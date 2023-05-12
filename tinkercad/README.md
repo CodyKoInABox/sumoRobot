@@ -1,4 +1,8 @@
 # CODIGO DO TINKERCAD
+
+### Feito no Arduino Uno pois o Tinkercad nao possui o nano.
+<sub>Pelo menos eu achava que nao tinha, mas pelo jeito alguem conseguiu fazer um arduino micro dentro do tinkercad https://www.tinkercad.com/things/fajuBYKTGtf </sub>
+
 www.tinkercad.com/things/4iOsOXoczqN  
 ![image](https://user-images.githubusercontent.com/125526050/236594033-022637df-5aa2-4c45-81db-e824565e7f43.png)
 
