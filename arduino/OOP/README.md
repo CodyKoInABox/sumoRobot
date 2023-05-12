@@ -3,7 +3,7 @@
 #### Codigo completo -> [main.ino](https://github.com/CodyKoInABox/sumoRobot/blob/main/arduino/OOP/main.ino)
 <sub>codigo inteiro com todas as funcionalidades do robo: fica girando no proprio eixo ate encontrar outro robo, entao segue na direcao do adversario em velocidade maxima</sub>
 
-## Classes:
+## Classes e seus metodos:
 
 ### SuperMotor
 
@@ -35,3 +35,19 @@
 | maiorQue(int)                    | Retorna true caso a leitura() seja maior que um numero definido pelo usuario e false caso seja menor      |
 | menorQue(int)                    | Retorna true caso a leitura() seja menor que um numero definido pelo usuario e false caso seja maior      |
 | constructor(int)                 | Construtor da classe, aceita como parametros o valor do setPin(int)                                          |
+
+## Classes e seus atributos:
+
+### SuperMotor
+
+| Atributo                           | Descricao                                                                                               | Tipo |
+|----------------------------------|-----------------------------------------------------------------------------------------------------------|------|
+| pinFrente                         | Porta digital PWM que conecta a entrada do motor que faz com que ele va para frente                      |Privado|
+| pinTras                           | Porta digital PWM que conecta a entrada do motor que faz com que ele va para tras                        |Privado|
+| enablePin                         | Porta digital que conecta com a entrada do motor que habilita ele                                        |Privado|
+
+### Sensor
+
+| Atributo                           | Descricao                                                                                               | Tipo |
+|----------------------------------|-----------------------------------------------------------------------------------------------------------|------|
+| pin                              | Porta analogica que conecta na saida de informacao do sensor                      |Privado|
