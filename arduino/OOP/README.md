@@ -19,7 +19,7 @@
 | setPinFrente(int)                | Define qual porta digital leva para a entrada do motor que controla seu movimento para frente             |void|Publico|
 | setPinTras(int)                  | Define qual porta digital leva para a entrada do motor que controla seu movimento para tras               |void|Publico|
 | getPinFrente()                   | Retorna o numero da porta digital que leva para a entrada do motor que controla seu movimento para frente |int|Publico|
-| getPinTras()                     | Retorna o numero da porta digital que leva para a entrada do motor que controla sue movimento para tras   |int|Publico|
+| getPinTras()                     | Retorna o numero da porta digital que leva para a entrada do motor que controla seu movimento para tras   |int|Publico|
 | setEnablePin(int)                | Define qual porta digital leva para a entrada do motor que o habilita                                     |void|Publico|
 | getEnablePin()                   | Retorna o numero da porta digital que leva para a entrada do motor que o habilita                         |int|Publico|
 | constructor(int, int, int)            | Construtor da classe, aceita como parametros os valores do setPinFrente(int), setPinTras(int) e setEnablePin(int)  |SuperMotor|Publico|
