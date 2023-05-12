@@ -1,3 +1,6 @@
+#ifndef Sensor_h
+#define Sensor_h
+
 class Sensor{
     private:
 
@@ -14,3 +17,5 @@ class Sensor{
     Sensor(int setPin);
 
 }
+
+#endif

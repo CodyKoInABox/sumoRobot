@@ -1,3 +1,6 @@
+#ifndef Motor_h
+#define Motor_h
+
 class Motor{
    private:
 
@@ -24,3 +27,5 @@ class Motor{
 
    Motor(int setPin, int setDefine);
 }
+
+#endif
