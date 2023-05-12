@@ -1,6 +1,7 @@
 # Codigo Orientado a Objetos
 
-#### [Codigo completo](https://github.com/CodyKoInABox/sumoRobot/blob/main/arduino/OOP/main.ino) <sub> -> o codigo inteiro com todas as funcionalidades do robo</sub>
+#### Codigo completo -> [main.ino](https://github.com/CodyKoInABox/sumoRobot/blob/main/arduino/OOP/main.ino)
+<sub>codigo inteiro com todas as funcionalidades do robo: fica girando no proprio eixo ate encontrar outro robo, entao segue na direcao do adversario em velocidade maxima</sub>
 
 ## Classes:
 
