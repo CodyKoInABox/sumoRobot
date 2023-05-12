@@ -12,9 +12,13 @@ class Sensor{
 
     int leitura();
 
-    void setPin(int value);
+    void setPin(int valor);
 
     int getPin();
+
+    bool maiorQue(int valor);
+
+    bool menorQue(int valor);
 
     Sensor(int setPin);
 
