@@ -7,34 +7,34 @@
 
 ### SuperMotor
 
-| Metodo                           | Descricao                                                                                                 |
-|----------------------------------|-----------------------------------------------------------------------------------------------------------|
-| frente()                         | Faz com que o motor se mova para frente com velocidade maxima                                             |
-| tras()                           | Faz com que o motor se mova para tras com velocidade maxima                                               |
-| velocidadeFrente(int)            | Faz com que o motor se mova para frente com uma velocidade definida pelo usuario                          |
-| velocidadeTras(int)              | Faz com que o motor se mova para tras com uma velocidade definida pelo usuario                            |
-| parar()                          | Faz com que o motor pare                                                                                  |
-| enable()                         | Habilita o motor (deixa ele pronto para ser operado)                                                      |
-| disable()                        | Desabilita o motor (deixa ele desligado, nao podendo ser operado)                                         |
-| setPinFrente(int)                | Define qual porta digital leva para a entrada do motor que controla seu movimento para frente             |
-| setPinTras(int)                  | Define qual porta digital leva para a entrada do motor que controla seu movimento para tras               |
-| getPinFrente()                   | Retorna o numero da porta digital que leva para a entrada do motor que controla seu movimento para frente |
-| getPinTras()                     | Retorna o numero da porta digital que leva para a entrada do motor que controla sue movimento para tras   |
-| setEnablePin(int)                | Define qual porta digital leva para a entrada do motor que o habilita                                     |
-| getEnablePin()                   | Retorna o numero da porta digital que leva para a entrada do motor que o habilita                         |
-| constructor(int, int, int)            | Construtor da classe, aceita como parametros os valores do setPinFrente(int), setPinTras(int) e setEnablePin(int)  |
+| Metodo                           | Descricao                                                                                                 | Tipo |
+|----------------------------------|-----------------------------------------------------------------------------------------------------------|------|
+| frente()                         | Faz com que o motor se mova para frente com velocidade maxima                                             |Publico|
+| tras()                           | Faz com que o motor se mova para tras com velocidade maxima                                               |Publico|
+| velocidadeFrente(int)            | Faz com que o motor se mova para frente com uma velocidade definida pelo usuario                          |Publico|
+| velocidadeTras(int)              | Faz com que o motor se mova para tras com uma velocidade definida pelo usuario                            |Publico|
+| parar()                          | Faz com que o motor pare                                                                                  |Publico|
+| enable()                         | Habilita o motor (deixa ele pronto para ser operado)                                                      |Publico|
+| disable()                        | Desabilita o motor (deixa ele desligado, nao podendo ser operado)                                         |Publico|
+| setPinFrente(int)                | Define qual porta digital leva para a entrada do motor que controla seu movimento para frente             |Publico|
+| setPinTras(int)                  | Define qual porta digital leva para a entrada do motor que controla seu movimento para tras               |Publico|
+| getPinFrente()                   | Retorna o numero da porta digital que leva para a entrada do motor que controla seu movimento para frente |Publico|
+| getPinTras()                     | Retorna o numero da porta digital que leva para a entrada do motor que controla sue movimento para tras   |Publico|
+| setEnablePin(int)                | Define qual porta digital leva para a entrada do motor que o habilita                                     |Publico|
+| getEnablePin()                   | Retorna o numero da porta digital que leva para a entrada do motor que o habilita                         |Publico|
+| constructor(int, int, int)            | Construtor da classe, aceita como parametros os valores do setPinFrente(int), setPinTras(int) e setEnablePin(int)  |Publico|
 
 
 ### Sensor
 
-| Metodo                           | Descricao                                                                                                 |
-|----------------------------------|-----------------------------------------------------------------------------------------------------------|
-| leitura()                        | Retorna o valor da leitura do sensor                                                                      |
-| setPin(int)                      | Define a porta analogica que leva ate a saida da leitura do sensor                                        |
-| getPin()                         | Retorna o numero da porta analogica que leva ate a saida da leitura do sensor                             |
-| maiorQue(int)                    | Retorna true caso a leitura() seja maior que um numero definido pelo usuario e false caso seja menor      |
-| menorQue(int)                    | Retorna true caso a leitura() seja menor que um numero definido pelo usuario e false caso seja maior      |
-| constructor(int)                 | Construtor da classe, aceita como parametros o valor do setPin(int)                                          |
+| Metodo                           | Descricao                                                                                                 | Tipo |
+|----------------------------------|-----------------------------------------------------------------------------------------------------------|------|
+| leitura()                        | Retorna o valor da leitura do sensor                                                                      |Publico|
+| setPin(int)                      | Define a porta analogica que leva ate a saida da leitura do sensor                                        |Publico|
+| getPin()                         | Retorna o numero da porta analogica que leva ate a saida da leitura do sensor                             |Publico|
+| maiorQue(int)                    | Retorna true caso a leitura() seja maior que um numero definido pelo usuario e false caso seja menor      |Publico|
+| menorQue(int)                    | Retorna true caso a leitura() seja menor que um numero definido pelo usuario e false caso seja maior      |Publico|
+| constructor(int)                 | Construtor da classe, aceita como parametros o valor do setPin(int)                                          |Publico|
 
 ## Classes e seus atributos:
 
