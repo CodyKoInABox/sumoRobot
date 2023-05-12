@@ -1,38 +1,52 @@
 #include "Motor.h"
 
-Motor :: Motor(int setPin, int setEnable){
-    pin = setPin;
-    enablePin = setEnable;
-}
+    void Motor :: frente(){
+        digitalWrite(pinFrente, HIGH);
+    }
 
-void Motor :: on(){
-    digitalWrite(pin, HIGH);
-}
+    void Motor :: tras(){
+        digitalWrite(pinTras, HIGH);
+    }
 
-void Motor :: off(){
-    digitalWrite(pin, LOW);
-}
+    void Motor :: enable(){
+        digitalWrite(enablePin, HIGH);
+    }
 
-void Motor :: enable(){
-    digitalWrite(setEnable, HIGH);
-}
+    void Motor :: parar(){
+        digitalWrite(pinFrente, LOW);
+        digitalWrite(pinTras, LOW);
+    }
 
-void Motor :: disable(){
-    digitalWrite(setEnable, LOW);
-}
+    void Motor :: disable(){
+        digitalWrite(enablePin, LOW);
+    }
 
-void Motor :: setPin(int value){
-    pin = value;
-}
+    void Motor :: setPinFrente(int value){
+        pinFrente = value;
+    }
 
-int Motor :: getPin(){
-    return pin;
-}
+    void Motor :: setPinTras(int value){
+        pinTras = value;
+    }
 
-void Motor :: setEnablePin(int value){
-    enablePin = value;
-}
+    int Motor :: getPinFrente(){
+        return pinFrente;
+    }
+    
+    int Motor :: getPinTras(){
+        return pinTras;
+    }
 
-int Motor :: getEnablePin(){
-    return enablePin;
-}
+    void Motor :: setEnablePin(int value){
+        enablePin = value;
+    }
+
+    int Motor :: getEnablePin(){
+        return enablePin;
+    }
+
+    Motor :: Motor(int setPinFrente, int setPinTras, int setEnablePin){
+        pinFrente = setPinFrente;
+        pinTras = setPinTras;
+        enablePin = setEnablePin;
+    }

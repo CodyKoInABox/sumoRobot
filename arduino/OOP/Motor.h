@@ -6,28 +6,35 @@
 class Motor{
    private:
 
-   int pin;
+   int pinFrente;
+   int pinTras;
    int enablePin;
 
    public:
 
-   void on();
+    void frente();
 
-   void off();
+    void tras();
 
-   void enable();
+    void parar();
 
-   void disable();
+    void enable();
 
-   void setPin(int value);
+    void disable();
 
-   int getPin();
+    void setPinFrente(int value);
 
-   void setEnablePin(int value);
+    void setPinTras(int value);
 
-   int getEnablePin();
+    int getPinFrente();
 
-   Motor(int setPin, int setDefine);
+    int getPinTras();
+
+    void setEnablePin(int value);
+
+    int getEnablePin();
+
+    Motor(int setPinFrente, int setPinTras, int setEnablePin);
 }
 
 #endif
