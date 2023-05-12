@@ -1,6 +1,6 @@
 # CODIGO DO ARDUINO (ARDUINO REAL)
 
-#### SECRETS do evenNewerCode.ino -> https://www.invertexto.com/sumorobotsecret
+#### SECRETS -> https://www.invertexto.com/sumorobotsecret
 <sub> Ate o dia da batalha (17/05) os valores SECRET ficarao protegidos por senha para fins competitivos, apos a batalha, os valores serao publicos.</sub>
 
 ### Codigo final -> [evenNewerCode.ino](https://github.com/CodyKoInABox/sumo-robot-PAC/blob/main/arduino/evenNewerCode.ino)
