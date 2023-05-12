@@ -27,4 +27,6 @@ https://www.tinkercad.com/things/lAKhufbEmem
 
 **Fio Marrom ->** Motor Enable
 
-**Fio Amarelo ->** Sensor Reading
+**Fio Amarelo ->** Leitura sensor
+
+**Fio Amarelo ->** Leitura sensor de distancia
