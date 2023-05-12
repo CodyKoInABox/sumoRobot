@@ -31,5 +31,5 @@
 | leitura()           | Retorna o valor da leitura do sensor                                                                                                               |
 | setPin(int)   | Define a porta analogica que leva ate a saida da leitura do sensor                                                                                 |
 | getPin()            | Retorna o numero da porta analogica que leva ate a saida da leitura do sensor                                                                      |
-| maiorQue(int) | Retorna true caso a leitura() seja maior que um numero definido pelo usuario e false caso a leitura seja menor que um numero definido pelo usuario |
-| menorQue(int) | Retorna true caso a leitura() seja menor que um numero definido pelo usuario e false caso a leitura seja maior que um numero definido pelo usuario |
+| maiorQue(int) | Retorna true caso a leitura() seja maior que um numero definido pelo usuario e false caso nao seja |
+| menorQue(int) | Retorna true caso a leitura() seja menor que um numero definido pelo usuario e false caso nao seja |
