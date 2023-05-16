@@ -30,7 +30,7 @@ void loop(){
                 delay(SECRET_2);
                 digitalWrite(9, LOW);
                 digitalWrite(10, LOW);
-                girarOff(MotorDireitoTras, MotorEsquerdoFrente);
+                digitalWrite(6, LOW);
             }
             firstTime = false;
             digitalWrite(10, HIGH);
