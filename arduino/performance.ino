@@ -1,21 +1,22 @@
-#define SECRET_1 212
-#define SECRET_2 500
-#define SECRET_3 2500
-#define SECRET_4 40
-#define SECRET_5 980
+#define SECRET_1 130
+#define SECRET_2 60
+#define SECRET_3 420
+#define SECRET_4 120
+#define SECRET_5 500
+
+bool firstTime = true;
 
 void setup(){
    Serial.begin(9600);
    digitalWrite(11, HIGH);
    digitalWrite(7, HIGH);
-   bool firstTime = true;
 }
 
 void loop(){
     if(analogRead(A0) > SECRET_5 || analogRead(A1) > SECRET_5){
         digitalWrite(5, LOW);
         digitalWrite(9, LOW);
-        if(analogRead(A2); < SECRET_4){
+        if(analogRead(A2) < SECRET_4){
             digitalWrite(6, LOW);
             digitalWrite(10, LOW);
             analogWrite(10, SECRET_1);
