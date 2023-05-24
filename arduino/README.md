@@ -1,7 +1,7 @@
 # CODIGO DO ARDUINO (ARDUINO REAL)
 
 #### SECRETS -> https://www.invertexto.com/sumorobotsecret
-<sub> Ate o dia da batalha (17/05) os valores SECRET ficarao protegidos por senha para fins competitivos, apos a batalha, os valores serao publicos.</sub>
+<sub> Ate o dia da batalha (24/05) os valores SECRET ficarao protegidos por senha para fins de competicao, apos a batalha, os valores serao publicos.</sub>
 
 ### Codigo Orientado a Objetos -> [OOP](https://github.com/CodyKoInABox/sumoRobot/tree/main/arduino/OOP)
 <sub> versao orientada a objetos do codigo, como solicitado pelo professor</sub>
