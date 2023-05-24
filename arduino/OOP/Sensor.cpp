@@ -5,7 +5,7 @@
     }
 
     void Sensor :: setPin(int valor){
-        pin = value;
+        pin = valor;
     }
 
     int Sensor :: getPin(){

@@ -22,6 +22,6 @@ class Sensor{
 
     Sensor(int setPin);
 
-}
+};
 
 #endif
