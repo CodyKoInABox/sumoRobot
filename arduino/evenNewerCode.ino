@@ -1,11 +1,11 @@
 // OS VALORES SECRET SERAO PRIVADOS ATE O DIA DA BATALHA (17/05), APOS A BATALHA, OS VALORES SERAO PUBLICOS
 // OS VALORES SECRET PODEM SER ENCONTRADOS AQUI -> https://www.invertexto.com/sumorobotsecret (protegidos por senha)
 
-#define SECRET_1 212
-#define SECRET_2 500
-#define SECRET_3 2500
-#define SECRET_4 40
-#define SECRET_5 980
+#define SECRET_1 130
+#define SECRET_2 60
+#define SECRET_3 420
+#define SECRET_4 120
+#define SECRET_5 500
 
 #define MotorEsquerdoTras 5
 #define MotorEsquerdoFrente 6
@@ -34,9 +34,12 @@ void setup(){
 
 void loop(){
 
-  Serial.println(readSensor(SensorFrente));
+  Serial.println(readSensor(SensorDireito));
+  Serial.println(" ");
+  Serial.println(readSensor(SensorEsquerdo));
 
-  mainFunction();
+ firstT();
+ mainFunction();
   
 }
 
@@ -97,6 +100,15 @@ void girarEnquantoNaoTemNadaNaFrente(bool temAlgoNaFrente, int motorFrente, int 
 // girar ate encontrar outro robo e entao ir reto
 // caso encontre linha branca, dar a re e voltar a girar
 
+bool vez = true;
+
+void firstT(){
+    if(vez){
+      delay(500);
+      vez = false;
+      }
+}
+
 bool firstTime = true;
 
 void mainFunction(){
@@ -106,7 +118,7 @@ void mainFunction(){
         motorOff(MotorEsquerdoTras);
       
 
-          if(!temAlgoNaFrente( readSensor(SensorFrente), DISTANCIA  )){
+          if(!temAlgoNaFrente( readSensor(SensorFrente), DISTANCIA)){
         motorOff(MotorDireitoFrente);
         motorOff(MotorEsquerdoFrente);
         
@@ -116,25 +128,22 @@ void mainFunction(){
 
          firstTime = true;
         
-      }
-    else{
+         }
+         else{
 
-
-        if(firstTime){
+         if(firstTime){
           girarOff(MotorDireitoFrente, MotorEsquerdoTras);
 
           girarOn(MotorDireitoTras, MotorEsquerdoFrente);
           delay(SECRET_2);
           girarOff(MotorDireitoTras, MotorEsquerdoFrente);
-        }
+         }
        
-        firstTime = false;
+         firstTime = false;
       
               motorOn(MotorDireitoFrente);
               motorOn(MotorEsquerdoFrente);
               
-         
-
       }
 
      
