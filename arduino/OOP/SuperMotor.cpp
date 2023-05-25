@@ -9,11 +9,11 @@
     }
 
     void SuperMotor :: velocidadeFrente(int velocidade){
-        analogWrite(pinFrente, velocidade)
+        analogWrite(pinFrente, velocidade);
     }
 
     void SuperMotor :: velocidadeTras(int velocidade){
-        analogWrite(pinTras, velocidade)
+        analogWrite(pinTras, velocidade);
     }
 
     void SuperMotor :: enable(){

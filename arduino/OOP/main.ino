@@ -1,17 +1,6 @@
 #include "SuperMotor.h"
 #include "Sensor.h"
-#include "memory.h"
 
-
-#define SECRET_1 212
-#define SECRET_2 500
-#define SECRET_3 2500
-#define SECRET_4 40
-#define SECRET_5 980
-
-
-#define LUZ SECRET_5
-#define DISTANCIA SECRET_4
 
 
 Sensor sensorFrente(A2);
@@ -21,6 +10,7 @@ Sensor sensorEsquerdo(A0);
 SuperMotor motorDireito(10, 9, 11);
 SuperMotor motorEsquerdo(6, 5, 7);
 
+bool firstTime = true;
 
 void setup(){
 
@@ -29,7 +19,7 @@ void setup(){
   motorDireito.enable();
   motorEsquerdo.enable();
   
-  bool firstTime = true;
+  
 
 }
 
@@ -43,17 +33,17 @@ void loop(){
 
 void mainFunction(){
 
-    if(sensorDireito.menorQue(LUZ) || sensorEsquerdo.menorQue(LUZ)){
+    if(sensorDireito.menorQue(500) || sensorEsquerdo.menorQue(500)){
 
       motorDireito.parar();
       motorEsquerdo.parar();
 
-      if(sensorFrente.maiorQue(DISTANCIA)){
+      if(sensorFrente.maiorQue(120)){
         motorDireito.parar();
         motorEsquerdo.parar();
 
-        motorDireito.velocidadeFrente(SECRET_1);
-        motorEsquerdo.velocidadeTras(SECRET_1);
+        motorDireito.velocidadeFrente(130);
+        motorEsquerdo.velocidadeTras(130);
 
         firstTime = true;
 
@@ -67,7 +57,7 @@ void mainFunction(){
           motorDireito.tras();
           motorEsquerdo.frente();
 
-          delay(SECRET_2);
+          delay(60);
 
           motorDireito.parar();
           motorEsquerdo.parar();
@@ -88,7 +78,7 @@ void mainFunction(){
       motorDireito.tras();
       motorEsquerdo.tras();
       
-      delay(SECRET_3);
+      delay(420);
     }
 
 }

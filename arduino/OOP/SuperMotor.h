@@ -39,6 +39,6 @@ class SuperMotor{
     int getEnablePin();
 
     SuperMotor(int setPinFrente, int setPinTras, int setEnablePin);
-}
+};
 
 #endif
