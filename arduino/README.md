@@ -1,6 +1,6 @@
 # CODIGO DO ARDUINO (ARDUINO REAL)
 
-#### SECRETS -> https://www.invertexto.com/?n=kHi92mE
+#### SECRETS -> https://www.invertexto.com/?n=kHi92mE ou [SECRET.md](/SECRET.md)
 <sub> Ate o dia da batalha (24/05/2023) os valores SECRET ficarao protegidos por senha para fins de competicao, apos a batalha, os valores serao publicos.</sub>
 
 ### Codigo Orientado a Objetos -> [OOP](https://github.com/CodyKoInABox/sumoRobot/tree/main/arduino/OOP)
