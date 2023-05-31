@@ -28,6 +28,8 @@ void loop(){
     switch(incomingByte){
         case 'F':
         case 'W':
+            motorDireito.parar();
+            motorEsquerdo.parar();
             bluetooth.println("FORWARD");
             motorDireito.frente();
             motorEsquerdo.frente();
@@ -35,6 +37,8 @@ void loop(){
 
         case 'R':
         case 'D':
+            motorDireito.parar();
+            motorEsquerdo.parar();
             bluetooth.println("RIGHT");
             motorDireito.tras();
             motorEsquerdo.frente();
@@ -42,6 +46,8 @@ void loop(){
 
         case 'L':
         case 'A':
+            motorDireito.parar();
+            motorEsquerdo.parar();
             bluetooth.println("LEFT");
             motorDireito.frente();
             motorEsquerdo.tras();
@@ -49,6 +55,8 @@ void loop(){
 
         case 'B':
         case 'S':
+            motorDireito.parar();
+            motorEsquerdo.parar();
             bluetooth.println("BACKWARDS");
             motorDireito.tras();
             motorEsquerdo.tras();
