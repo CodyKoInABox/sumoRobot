@@ -21,7 +21,7 @@ void setup(){
 }
 
 void loop(){
-    Serial.println(bluetooth.read());
+    //Serial.println(bluetooth.read());
 
     incomingByte = bluetooth.read();
 
@@ -31,6 +31,7 @@ void loop(){
             motorDireito.parar();
             motorEsquerdo.parar();
             bluetooth.println("FORWARD");
+            Serial.println("FORWARD");
             motorDireito.frente();
             motorEsquerdo.frente();
         break;
@@ -40,6 +41,7 @@ void loop(){
             motorDireito.parar();
             motorEsquerdo.parar();
             bluetooth.println("RIGHT");
+            Serial.println("RIGHT");
             motorDireito.tras();
             motorEsquerdo.frente();
         break;
@@ -49,6 +51,7 @@ void loop(){
             motorDireito.parar();
             motorEsquerdo.parar();
             bluetooth.println("LEFT");
+            Serial.println("LEFT");
             motorDireito.frente();
             motorEsquerdo.tras();
         break;
@@ -58,6 +61,7 @@ void loop(){
             motorDireito.parar();
             motorEsquerdo.parar();
             bluetooth.println("BACKWARDS");
+            Serial.println("BACKWARDS");
             motorDireito.tras();
             motorEsquerdo.tras();
         break;
