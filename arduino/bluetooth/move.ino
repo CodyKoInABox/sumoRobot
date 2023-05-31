@@ -5,13 +5,12 @@
 SuperMotor motorDireito(10, 9, 11);
 SuperMotor motorEsquerdo(5, 6, 7);
 
-#define TX 4// TX PORT GOES HERE
-#define RX 3// RX PORT GOES HERE
+#define TX 4// HC-05 BLUETOOTH MODULE'S TX PORT GOES HERE
+#define RX 3// HC-05 BLUETOOTH MODULE'S RX PORT GOES HERE
 
 SoftwareSerial bluetooth(TX, RX);
 
 int incomingByte;
-
 
 void setup(){
     Serial.begin(9600);
