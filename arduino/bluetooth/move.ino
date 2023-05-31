@@ -4,8 +4,8 @@
 SuperMotor motorDireito(10, 9, 11);
 SuperMotor motorEsquerdo(6, 5, 7);
 
-#define TX // TX PORT GOES HERE
-#define RX // RX PORT GOES HERE
+#define TX 4// TX PORT GOES HERE
+#define RX 3// RX PORT GOES HERE
 
 SoftwareSerial bluetooth(TX, RX);
 
@@ -22,7 +22,6 @@ void setup(){
 
 void loop(){
     Serial.println(bluetooth.read());
-    if(bluetooth.available() > 0){
 
         incomingByte = bluetooth.read();
 
@@ -33,7 +32,6 @@ void loop(){
       motorEsquerdo.frente();
     }
 
-    }
 }
 
 // VALUES FOR THE ANDROID APP "Bluetooth RC Controller"
