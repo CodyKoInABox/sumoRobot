@@ -1,4 +1,8 @@
 #include "SoftwareSerial.h"
+#include "SuperMotor.h"
+
+SuperMotor motorDireito(10, 9, 11);
+SuperMotor motorEsquerdo(6, 5, 7);
 
 #define TX // TX PORT GOES HERE
 #define RX // RX PORT GOES HERE
@@ -16,11 +20,14 @@ void setup(){
 void loop(){
     Serial.println(bluetooth.read());
     if(bluetooth.available() > 0){
+
         incomingByte = bluetooth.read();
 
         //MOVE FORWARD
         if (incomingByte == 70) {
       bluetooth.println("FORWARD");
+      motorDireito.frente();
+      motorEsquerdo.frente();
     }
 
     }
