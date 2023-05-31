@@ -23,13 +23,36 @@ void setup(){
 void loop(){
     Serial.println(bluetooth.read());
 
-        incomingByte = bluetooth.read();
+    incomingByte = bluetooth.read();
 
-        //MOVE FORWARD
-        if (incomingByte == 'F') {
-      bluetooth.println("FORWARD");
-      motorDireito.frente();
-      motorEsquerdo.frente();
+    switch(incomingByte){
+        case 'F':
+        case 'W':
+            bluetooth.println("FORWARD");
+            motorDireito.frente();
+            motorEsquerdo.frente();
+        break;
+
+        case 'R':
+        case 'D':
+            bluetooth.println("RIGHT");
+            motorDireito.tras();
+            motorEsquerdo.frente();
+        break;
+
+        case 'L':
+        case 'A':
+            bluetooth.println("LEFT");
+            motorDireito.frente();
+            motorEsquerdo.tras();
+        break;
+
+        case 'B':
+        case 'S':
+            bluetooth.println("BACKWARDS");
+            motorDireito.tras();
+            motorEsquerdo.tras();
+        break;
     }
 
 }
