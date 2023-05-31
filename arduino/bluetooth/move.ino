@@ -24,7 +24,7 @@ void loop(){
         incomingByte = bluetooth.read();
 
         //MOVE FORWARD
-        if (incomingByte == 70) {
+        if (incomingByte == 'F') {
       bluetooth.println("FORWARD");
       motorDireito.frente();
       motorEsquerdo.frente();
