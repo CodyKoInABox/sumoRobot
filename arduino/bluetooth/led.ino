@@ -1,6 +1,9 @@
 #include "SoftwareSerial.h"
 
-SoftwareSerial bluetooth(A1, A2);
+#define TX // TX PORT GOES HERE
+#define RX // RX PORT GOES HERE
+
+SoftwareSerial bluetooth(TX, RX);
 
 int incomingByte;
 
