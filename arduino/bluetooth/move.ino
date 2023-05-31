@@ -56,9 +56,3 @@ void loop(){
     }
 
 }
-
-// VALUES FOR THE ANDROID APP "Bluetooth RC Controller"
-// FORWARD = 70
-// BACKWARD = 66
-// LEFT = 76
-// RIGHT = 82
