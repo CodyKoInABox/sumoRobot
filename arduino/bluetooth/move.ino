@@ -10,8 +10,6 @@ SuperMotor motorEsquerdo(5, 6, 7);
 
 SoftwareSerial bluetooth(TX, RX);
 
-int incomingByte;
-
 void setup(){
     Serial.begin(9600);
     bluetooth.begin(9600);
@@ -23,9 +21,7 @@ void setup(){
 void loop(){
     //Serial.println(bluetooth.read());
 
-    incomingByte = bluetooth.read();
-
-    switch(incomingByte){
+    switch(bluetooth.read()){
         case 'F':
         case 'W':
             motorDireito.parar();
