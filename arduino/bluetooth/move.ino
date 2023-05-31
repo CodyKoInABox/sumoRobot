@@ -1,8 +1,9 @@
 #include "SoftwareSerial.h"
 #include "SuperMotor.h"
 
+//THE SuperMotor DOCUMENTATION CAN BE FOUND HERE: https://github.com/CodyKoInABox/sumoRobot/tree/main/arduino/OOP
 SuperMotor motorDireito(10, 9, 11);
-SuperMotor motorEsquerdo(6, 5, 7);
+SuperMotor motorEsquerdo(5, 6, 7);
 
 #define TX 4// TX PORT GOES HERE
 #define RX 3// RX PORT GOES HERE
