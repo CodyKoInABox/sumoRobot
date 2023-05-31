@@ -61,6 +61,11 @@ void loop(){
             motorDireito.tras();
             motorEsquerdo.tras();
         break;
+
+        default:
+            motorDireito.parar();
+            motorEsquerdo.parar();
+        break;
     }
 
 }
