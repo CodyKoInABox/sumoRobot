@@ -11,7 +11,9 @@ void setup(){
 }
 
 void loop(){
-    if(bluetooth.read() != -1){
-      Serial.println(bluetooth.read());  
-    }
+    //if(bluetooth.read() != -1){
+    //  Serial.println(bluetooth.read());  
+    //}
+
+    Serial.println(bluetooth.available());
 }
