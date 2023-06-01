@@ -62,6 +62,12 @@ void loop(){
             motorDireito.tras();
             motorEsquerdo.tras();
         break;
+
+        case 'X':
+        case 'P':
+            motorDireito.parar();
+            motorEsquerdo.parar();
+        break;
     }
 
 }
