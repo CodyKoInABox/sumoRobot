@@ -2,8 +2,8 @@
 #include "SuperMotor.h"
 
 //THE SuperMotor DOCUMENTATION CAN BE FOUND HERE: https://github.com/CodyKoInABox/sumoRobot/tree/main/arduino/OOP
-SuperMotor motorDireito(9, 10, 11);
-SuperMotor motorEsquerdo(5, 6, 7);
+SuperMotor motorDireito(10, 9, 11);
+SuperMotor motorEsquerdo(6, 5, 7);
 
 #define TX 4// HC-05 BLUETOOTH MODULE'S TX PORT GOES HERE
 #define RX 3// HC-05 BLUETOOTH MODULE'S RX PORT GOES HERE
