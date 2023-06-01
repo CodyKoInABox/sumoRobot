@@ -2,7 +2,7 @@
 #include "SuperMotor.h"
 
 //THE SuperMotor DOCUMENTATION CAN BE FOUND HERE: https://github.com/CodyKoInABox/sumoRobot/tree/main/arduino/OOP
-SuperMotor motorDireito(10, 9, 11);
+SuperMotor motorDireito(9, 10, 11);
 SuperMotor motorEsquerdo(5, 6, 7);
 
 #define TX 4// HC-05 BLUETOOTH MODULE'S TX PORT GOES HERE
@@ -19,9 +19,9 @@ void setup(){
 }
 
 void loop(){
-    //Serial.println(bluetooth.read());
-    bluetooth.overflow();
     
+    bluetooth.overflow();
+
     switch(bluetooth.read()){
         case 'F':
         case 'W':
@@ -61,12 +61,6 @@ void loop(){
             Serial.println("BACKWARDS");
             motorDireito.tras();
             motorEsquerdo.tras();
-        break;
-
-        default:
-            Serial.println("STOP");
-            motorDireito.parar();
-            motorEsquerdo.parar();
         break;
     }
 
