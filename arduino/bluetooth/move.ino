@@ -63,6 +63,7 @@ void loop(){
         break;
 
         default:
+            Serial.println("STOP");
             motorDireito.parar();
             motorEsquerdo.parar();
         break;
