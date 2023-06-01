@@ -20,7 +20,8 @@ void setup(){
 
 void loop(){
     //Serial.println(bluetooth.read());
-
+    bluetooth.overflow();
+    
     switch(bluetooth.read()){
         case 'F':
         case 'W':
