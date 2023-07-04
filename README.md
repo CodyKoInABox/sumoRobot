@@ -1,5 +1,7 @@
 # PAC | Sumo Robot
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P7MWF8N)
+
 ## 3x Competition Winner Code 2023 🔥 Verdinho 420 km/h team 🍀
 ## Codigo 3x Campeao da Competicao 2023 🚀 Time Verdinho 420 km/h 🍀
 
